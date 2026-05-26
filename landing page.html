@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DỆT GAI THÀNH VẢI (DEMO)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- ══════════════════ NAV ══════════════════ -->
+<nav id="mainNav">
+    <a href="#hero" class="nav-logo">CƠM TẤM</a>
+    <div class="nav-links">
+        <a href="#problem">The Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#imc">IMC Plan</a>
+        <a href="#team">Team</a>
+        <a href="#cta" class="nav-cta">Join Waitlist</a>
+    </div>
+    <div class="nav-menu" onclick="toggleMenu()">
+        <svg width=""22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="4" width="24" height="2" fill="currentColor"/>
+            <rect y="11" width="24" height="2" fill="currentColor"/>
+            <rect y="18" width="24" height="2" fill="currentColor"/>
+            <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+    </div>
+</nav>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section id="hero">
+    <div class="hero-video-ph">
+        <div class="hero-gradient"></div>
+       /* video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: fill; aspect-ratio: 16 / 9;">
+            source src="grab.mp4" type="video/mp4">Trình duyệt của bạn không hỗ trợ thẻ video.
+        /video*/
+    </div>
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+        <div class="label hero-tag reveal">DTIE · Agricultural Trade Innovation · Vietnam 2026</div>
+        <h1 class="hero-h1 reveal reveal-delay-1">Dệt Gai Thành Vải,<br>Dệt Mới Tương Lai</h1>
+        <p class="hero-sub reveal reveal-delay-2">Vietnam's first sustainable fashion brand made from durian husks with technology imported from Thailand — transforming 146,000 tonnes of agricultural waste into premium sustainable fashion, one stitch at a time.</p>
+        <div class="hero-actions reveal reveal-delay-3">
+            <a href="#product" class="btn-gold">Explore the Product</a>
+            <a href="#problem" class="btn-outline">Our Story</a>
+        </div>
+        <div class="hero-stats reveal reveal-delay-4">
+            <div class="hs-item">
+                <span class="hs-num">150,000+</span>
+                <span class="hs-lbl">Hectares of Durian PLantations in Vietnam</span>
+            </div>
+            <div class="hs-item">
+                <span class="hs-num">146,000+</span>
+                <span class="hs-lbl">Tonnes of durian husk waste per year</span>
+            </div>
+            <div class="hs-item">
+                <span class="hs-num">-80%</span>
+                <span class="hs-lbl">Export decline in early 2025</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════ PROBLEM ══════════════════ -->
+<section id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="problem-left reveal">
+        <span class="section-label" style="color:var(--gold);font-family:'grotesque.ttf',serif;">The Crisis</span>
+        <h2 style="margin-top:16px;">Vietnam's durian<br><em>oversupply disaster</em></h2>
+        <p>A boom in durian export prices triggered a mass planting frenzy. Farmers doubled their land, quadrupled production. Then China tightened import standards — and the entire industry collapsed.</p>
+        <p>Exports fell 80% in early 2025. Unsold fruit means mountains of husks. And nobody has a plan for them.</p>
+        <div class="crisis-chain" style="margin-top:32px;">
+          <div class="cc-item"><div class="cc-arrow">→</div><div class="cc-text"><strong>Export prices surged</strong> — farmers planted aggressively, total area doubled the government's own 2030 target</div></div>
+          <div class="cc-item"><div class="cc-arrow">→</div><div class="cc-text"><strong>China tightened standards</strong> — only 25,000 of 151,000 ha have certified export codes</div></div>
+          <div class="cc-item"><div class="cc-arrow">→</div><div class="cc-text"><strong>Oversupply & price crash</strong> — 30–40% of harvested fruit rejected, sold for almost nothing</div></div>
+          <div class="cc-item"><div class="cc-arrow">→</div><div class="cc-text"><strong>Husk mountains</strong> — 60–70% of each fruit is husk, farmers pay 800,000đ/tonne to dispose of it</div></div>
+        </div>
+      </div>
+      <div class="stat-stack reveal reveal-delay-2">
+        <div class="stat-card">
+          <div class="stat-card-num">146K+</div>
+          <div class="stat-card-info"><div class="sc-label">Tonnes of husk waste per year</div><div class="sc-desc">And growing — proportional to the 4× increase in planted area since 2015</div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-num">800K <br> VND</div>
+          <div class="stat-card-info"><div class="sc-label">Disposal cost per tonne</div><div class="sc-desc">Not counting labour for collection & transport. Large farms spend billions per season</div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-num">1 YEAR</div>
+          <div class="stat-card-info"><div class="sc-label">To fully decompose</div><div class="sc-desc">Meanwhile it rots in fields, contaminates waterways, and releases methane</div></div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-num">30%</div>
+            <div class="stat-card-info"><div class="sc-label">Cellulose in every husk</div><div class="sc-desc">Equivalent to cotton and hemp in mechanical properties — a fiber waiting to be born</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ SOLUTION/PROTOTYPE ══════════════════ -->
+<section id="solution">
+    <div class="container">
+        <div class="solution-top reveal">
+            <span class="section-label" style="color:var(--gold);font-family:'grotesque.ttf',serif;text-transform:uppercase;">Our Solution</span>
+            <h2 style="margin-top:16px;font-family:'vinasans.otf',serif;font-size:80px;color:#0D530E;">Dệt Gai Thành Vải <br>Mátch đồ ra vibe</h2>
+            <h3 style="margin-top:16px;font-family:'grotesque.ttf',serif;font-size:20px;"><strong>From waste to wardrobe: </strong><br>a new story for Vietnamese agriculture and fashion</h3>
+        </div>
+        <div class="process-flow reveal reveal-delay-1">
+            <div class="pf-step"><div class="pf-dot">🌵</div><div class="pf-step-num">01</div><div class="pf-step-label">Husk Collection</div><div class="pf-step-desc">Purchased directly from farmers & cooperatives across Tây Nguyên</div></div>
+            <div class="pf-step"><div class="pf-dot">💧</div><div class="pf-step-num">02</div><div class="pf-step-label">Retting & Separation</div><div class="pf-step-desc">Outer spines removed, soaked to separate cellulose from lignin</div></div>
+            <div class="pf-step"><div class="pf-dot">🧪</div><div class="pf-step-num">03</div><div class="pf-step-label">Cellulose Extraction</div><div class="pf-step-desc">Chemical treatment to reach textile-grade purity</div></div>
+            <div class="pf-step"><div class="pf-dot">🌀</div><div class="pf-step-num">04</div><div class="pf-step-label">Fiber Spinning</div><div class="pf-step-desc">Cellulose spun into staple fiber, tensile strength tested</div></div>
+            <div class="pf-step"><div class="pf-dot">🧵</div><div class="pf-step-num">05</div><div class="pf-step-label">Weaving</div><div class="pf-step-desc">Pure durian fiber or blended with organic cotton</div></div>
+            <div class="pf-step"><div class="pf-dot">✂️</div><div class="pf-step-num">06</div><div class="pf-step-label">Design & QR Tag</div><div class="pf-step-desc">Each product tagged with QR linking to its source farm</div></div>
+        </div>
+        <div class="cellulose-callout reveal">
+            <div class="cc-left">
+                <h3 style="font-family: 'grotesque.ttf', serif;">The <strong>fiber</strong> hiding in <strong>plain</strong> waste</h3>
+                <p>Durian husk cellulose has mechanical properties comparable to cotton and hemp — tensile strength, elongation at break, moisture absorption. The raw material has been sitting in Vietnam's fields for decades. We're just the first to use it.</p>
+                <p style="margin-top:14px;">Lab residue (lignin, pectin) is processed into organic fertilizer and returned to the farms — closing the loop entirely.</p>
+            </div>
+            <div class="cc-right">
+                <div class="cc-fact"><div class="cc-fact-num">30%</div><div class="cc-fact-label">Cellulose content in husk</div></div>
+                <div class="cc-fact"><div class="cc-fact-num">≈ Cotton</div><div class="cc-fact-label">Mechanical properties</div></div>
+                <div class="cc-fact"><div class="cc-fact-num">0đ</div><div class="cc-fact-label">Current market value of husk</div></div>
+                <div class="cc-fact"><div class="cc-fact-num">100%</div><div class="cc-fact-label">Natural, biodegradable</div></div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ IMPACT ══════════════════ -->
+<section id="impact">
+  <div class="container">
+    <span class="section-label impact-label reveal">Live Impact</span>
+    <h2 class="impact-title reveal reveal-delay-1">Every USE is a resCUE</h2>
+    <p class="impact-sub reveal reveal-delay-2">These numbers update with every sale. Real impact, real time.</p>
+    <div class="counters reveal reveal-delay-3">
+      <div class="counter-item">
+        <span class="counter-num" id="c1">0</span>
+        <div class="counter-label">KG of husk saved</div>
+        <div class="counter-note">from landfill & waterways</div>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" id="c2">0</span>
+        <div class="counter-label">Farmers benefited</div>
+        <div class="counter-note">across 3 provinces</div>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" id="c3">0</span>
+        <div class="counter-label">Products made</div>
+        <div class="counter-note">wallets, hats, rugs & more</div>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" id="c4">0</span>
+        <div class="counter-label">kg CO₂ avoided</div>
+        <div class="counter-note">vs conventional disposal</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ IMC PLAN ══════════════════ -->
+<section id="imc">
+  <div class="container">
+    <div class="imc-header reveal">
+      <span class="section-label" style="color:var(--gold);">GO-TO-MARKET</span>
+      <h2 style="margin-top:16px;color:var(--cream);">Integrated Marketing<br>Communications Plan</h2>
+    </div>
+
+    <!-- Key Message Pillars -->
+    <div class="message-pillars reveal" style="margin-bottom:40px;">
+      <div class="mp-card"><div class="mp-type">Primary Message</div><div class="mp-text">"Wear less. Mean more."</div></div>
+      <div class="mp-card"><div class="mp-type">Social Proof Hook</div><div class="mp-text">"This wallet used to be durian husk."</div></div>
+      <div class="mp-card"><div class="mp-type">Community CTA</div><div class="mp-text">"Nothing to wear? Mix with RIÊNG."</div></div>
+    </div>
+
+    <!-- Phase tabs + content -->
+    <div class="imc-strategy reveal reveal-delay-1">
+      <div class="imc-sidebar">
+        <div class="imc-tab active" onclick="showPhase(0,this)">
+          <span class="tab-phase">Phase 1</span>
+          <span class="tab-title">Teaser</span>
+          <span class="tab-period">Months 1–2</span>
+        </div>
+        <div class="imc-tab" onclick="showPhase(1,this)">
+          <span class="tab-phase">Phase 2</span>
+          <span class="tab-title">Launch</span>
+          <span class="tab-period">Months 3–4</span>
+        </div>
+        <div class="imc-tab" onclick="showPhase(2,this)">
+          <span class="tab-phase">Phase 3</span>
+          <span class="tab-title">Growth</span>
+          <span class="tab-period">Months 5–6</span>
+        </div>
+        <div class="imc-tab" onclick="showPhase(3,this)">
+          <span class="tab-phase">Phase 4</span>
+          <span class="tab-title">Scale</span>
+          <span class="tab-period">Month 7+</span>
+        </div>
+      </div>
+      <div class="imc-content" id="imcContent">
+        <!-- Phase content injected by JS -->
+      </div>
+    </div>
+
+    <!-- Budget breakdown -->
+    <div class="budget-section reveal" style="margin-top:36px;">
+      <div class="budget-title">Launch Phase Budget Allocation</div>
+      <div class="budget-row"><span class="br-label">TikTok / IG Ads</span><div class="br-track"><div class="br-fill" style="width:35%;background:var(--thorn);"></div></div><span class="br-pct">35%</span></div>
+      <div class="budget-row"><span class="br-label">Influencer</span><div class="br-track"><div class="br-fill" style="width:25%;background:var(--gold);"></div></div><span class="br-pct">25%</span></div>
+      <div class="budget-row"><span class="br-label">Video Production</span><div class="br-track"><div class="br-fill" style="width:20%;background:var(--green-l);"></div></div><span class="br-pct">20%</span></div>
+      <div class="budget-row"><span class="br-label">Pop-up Event</span><div class="br-track"><div class="br-fill" style="width:12%;background:var(--dust);"></div></div><span class="br-pct">12%</span></div>
+      <div class="budget-row" style="margin-bottom:0;"><span class="br-label">PR & Press</span><div class="br-track"><div class="br-fill" style="width:8%;background:#8B8080;"></div></div><span class="br-pct">8%</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ TEAM ══════════════════ -->
+<section id="team">
+  <div class="container">
+    <div class="team-header reveal">
+      <span class="section-label" style="color:var(--thorn);">The People</span>
+      <h2 style="margin-top:16px;">Built by five.<br>For thousands.</h2>
+      <p>A rare combination of agricultural knowledge, material science, fashion design, technology, and brand storytelling — all under one mission.</p>
+    </div>
+
+    <div class="team-grid">
+      <!-- Team member 1 -->
+      <div class="team-card reveal">
+        <div class="tc-photo img-ph">
+          <!-- ┌──────────────────────────────────┐ -->
+          <!-- │  Team Member 1 — CEO             │ -->
+          <!-- │  Professional headshot           │ -->
+          <!-- │  400 × 400px, square crop        │ -->
+          <!-- └──────────────────────────────────┘ -->
+          <div class="ph-icon" style="font-size:24px;">👤</div>
+          <div class="ph-label" style="font-size:9px;">CEO Photo<br>400×400px</div>
+        </div>
+        <div class="tc-name">TRẦN MAI CHI</div>
+        <div class="tc-role">Strategic Planner</div>
+        <div class="tc-desc">Strategy, stakeholder relations, brand storytelling. Deep understanding of Vietnam's agricultural trade landscape.</div>
+      </div>
+      <!-- Team member 2 -->
+      <div class="team-card reveal reveal-delay-1">
+        <div class="tc-photo img-ph">
+          <div class="ph-icon" style="font-size:24px;">👤</div>
+          <div class="ph-label" style="font-size:9px;">R&D Lead Photo<br>400×400px</div>
+        </div>
+        <div class="tc-name">HOÀNG NGUYỆT ANH</div>
+        <div class="tc-role">Material R&D Lead</div>
+        <div class="tc-desc">Cellulose extraction process, lab partnerships (Bách Khoa / Bảo Lân). Textile engineering background.</div>
+      </div>
+      <!-- Team member 3 -->
+      <div class="team-card reveal reveal-delay-2">
+        <div class="tc-photo img-ph">
+          <div class="ph-icon" style="font-size:24px;">👤</div>
+          <div class="ph-label" style="font-size:9px;">Design Lead Photo<br>400×400px</div>
+        </div>
+        <div class="tc-name">HUỲNH THỊ HẠNH DUNG</div>
+        <div class="tc-role">Design Lead</div>
+        <div class="tc-desc">Product aesthetics, lookbook, brand identity. Proven track record in Vietnamese fashion & craft.</div>
+      </div>
+      <!-- Team member 4 -->
+      <div class="team-card reveal reveal-delay-3">
+        <div class="tc-photo img-ph">
+          <div class="ph-icon" style="font-size:24px;">👤</div>
+          <div class="ph-label" style="font-size:9px;">Tech Lead Photo<br>400×400px</div>
+        </div>
+        <div class="tc-name">HỒ LÊ BẢO HÂN</div>
+        <div class="tc-role">Technical Lead</div>
+        <div class="tc-desc">Mix-and-match platform development, QR tracing system, e-commerce infrastructure.</div>
+      </div>
+      <!-- Team member 5 -->
+      <div class="team-card reveal reveal-delay-4">
+        <div class="tc-photo img-ph">
+          <div class="ph-icon" style="font-size:24px;">👤</div>
+          <div class="ph-label" style="font-size:9px;">Marketing Lead Photo<br>400×400px</div>
+        </div>
+        <div class="tc-name">THÁI PHƯƠNG NGÂN</div>
+        <div class="tc-role">Marketing Lead</div>
+        <div class="tc-desc">Content strategy, community building, influencer partnerships. TikTok & Instagram-native storyteller.</div>
+      </div>
+      <!-- Team member 6 -->
+      <div class="team-card reveal reveal-delay-5">
+        <div class="tc-photo img-ph">
+          <div class="ph-icon" style="font-size:24px;">👤</div>
+          <div class="ph-label" style="font-size:9px;">Marketing Lead Photo<br>400×400px</div>
+        </div>
+        <div class="tc-name">NGUYỄN ĐÌNH HẢI</div>
+        <div class="tc-role">đéo biết làm gì</div>
+        <div class="tc-desc">Content strategy, community building, influencer partnerships. TikTok & Instagram-native storyteller.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════ CTA ══════════════════ -->
+<section id="cta">
+  <div class="container cta-content">
+    <span class="section-label cta-label reveal">Join the Movement</span>
+    <h2 class="cta-h2 reveal reveal-delay-1">Be the first to<br><em>wear the change</em></h2>
+    <p class="cta-sub reveal reveal-delay-2">Sign up for early access. Be notified when we launch. Get a founder's discount on your first RIÊNG. piece.</p>
+    <div class="email-form reveal reveal-delay-3">
+      <input type="email" class="email-input" placeholder="your@email.com" />
+      <button class="btn-gold" onclick="handleSignup()">Notify Me →</button>
+    </div>
+    <p class="cta-note reveal reveal-delay-4">No spam. Just the launch, the story, and one email from Farmer Minh.</p>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">CƠM TẤM</span>
+    <div class="footer-links">
+      <a href="#problem">The Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#imc">IMC Plan</a>
+      <a href="#team">Team</a>
+    </div>
+    <span class="footer-copy">© 2026 CƠM TẤM · DTIE Agricultural Trade Innovation · Vietnam</span>
+  </div>
+</footer>
+
+<!-- ══════════════════ JS ══════════════════ -->
+<script>
+/* ── Nav scroll ── */
+window.addEventListener('scroll',()=>{
+  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50);
+});
+
+/* ── Reveal on scroll ── */
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');}});
+},{threshold:0.12});
+revealEls.forEach(el=>io.observe(el));
+
+/* ── Animated counters ── */
+function animateCount(id,target,suffix='',duration=2000){
+  const el=document.getElementById(id);
+  if(!el)return;
+  let start=0,startTime=null;
+  const step=(ts)=>{
+    if(!startTime)startTime=ts;
+    const p=Math.min((ts-startTime)/duration,1);
+    const ease=1-Math.pow(1-p,3);
+    el.textContent=Math.floor(ease*target).toLocaleString()+suffix;
+    if(p<1)requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+const counterIo=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      animateCount('c1',2400,'kg');
+      animateCount('c2',12,'');
+      animateCount('c3',47,'');
+      animateCount('c4',580,'');
+      counterIo.disconnect();
+    }
+  });
+},{threshold:0.3});
+const impactSection=document.getElementById('impact');
+if(impactSection)counterIo.observe(impactSection);
+
+/* ── IMC Phase data ── */
+const phases=[
+  {
+    tag:'Phase 1 · Months 1–2',title:'Teaser — Build Curiosity',
+    goal:'Target: 5,000 IG followers · 2,000 TikTok · 500 email waitlist',
+    channels:['📸 Instagram','🎵 TikTok','📧 Email Waitlist'],
+    actions:[
+      {t:'Instagram Mystery Series',d:'10 close-up shots of durian husk texture — no product reveal. Caption: "You see trash. We see something else."'},
+      {t:'TikTok "Guess What This Is"',d:'ASMR texture videos of husk. Ask viewers to guess in comments. Watch it travel.'},
+      {t:'Email Waitlist Landing',d:'Simple page: "Something is being made from durian husk. Be first to know."'},
+      {t:'Press Kit Seeding',d:'Send fabric swatch + press kit to 5 fashion editors and sustainability bloggers.'},
+    ],
+    kpis:[{n:'5,000',l:'IG followers'},{n:'500',l:'Email signups'},{n:'100k+',l:'TikTok views'}]
+  },
+  {
+    tag:'Phase 2 · Months 3–4',title:'Launch — Make Noise',
+    goal:'Target: 500 first orders · 15,000 website visitors · 1 major press feature',
+    channels:['🎬 Hero Film','🎪 Pop-up Event','👥 Influencer','📰 PR & Media'],
+    actions:[
+      {t:'Hero Brand Film (3 min)',d:'"From Farmer Minh\'s Garden" — documentary following 1 farmer from harvest to holding the finished wallet. Simultaneous release on FB, YT, IG Reels.'},
+      {t:'2-Day Pop-up in HCMC',d:'The Factory or Winta Market. Live Styling Studio demo, meet the farmers (video call), scan QR on products. Target 200+ visitors/day.'},
+      {t:'3-Tier Influencer Plan',d:'1 Mega (500k+ eco/fashion), 5 Micro (20–100k sustainable fashion niche), 20 Nano (authentic eco community, genuine UGC).'},
+      {t:'Media Pitching',d:'Vietcetera, ELLE Vietnam, Tuổi Trẻ, VnExpress. Angle: "Vietnamese startup turns durian waste into premium fashion." Target 3 organic features.'},
+    ],
+    kpis:[{n:'500',l:'First orders'},{n:'15k',l:'Website visitors'},{n:'3',l:'Press features'}]
+  },
+  {
+    tag:'Phase 3 · Months 5–6',title:'Growth — Build Community',
+    goal:'Target: 30% customer return rate · 2,000 UGC posts · Expand to Hà Nội',
+    channels:['🔄 UGC Campaign','👥 Community Group','📧 Email Nurture','🎯 Retargeting'],
+    actions:[
+      {t:'#RIENGOutfit UGC Campaign',d:'Customers post mix-and-match looks with hashtag. Top 5 weekly picks win 500k vouchers. UGC auto-displays in Styling Studio.'},
+      {t:'"Dress With Purpose" Community',d:'Facebook/Zalo group for RIÊNG. customers — styling tips, sustainability stories, seasonal farm updates direct from farmers.'},
+      {t:'6-Email Post-Purchase Flow',d:'Thank you → Farmer story → Mix guide → Review request → New arrivals → Referral code. Automated, human-feeling.'},
+      {t:'Retargeting Ads',d:'Serve "Did you see how this is made?" video ads to website visitors who didn\'t convert. Emphasize farm traceability angle.'},
+    ],
+    kpis:[{n:'30%',l:'Return rate'},{n:'2,000',l:'UGC posts'},{n:'1',l:'New city'}]
+  },
+  {
+    tag:'Phase 4 · Month 7+',title:'Scale — B2B & Export',
+    goal:'Target: 2 B2B fashion partners · Pilot export to Singapore / Japan',
+    channels:['🤝 B2B Outreach','🌏 Export','🏆 Awards & Grants'],
+    actions:[
+      {t:'B2B Fashion Pitch',d:'Approach 10 Vietnamese fashion brands needing eco-material: Kilomet109, Sơn Collection, An Nhiên. Offer: durian fiber fabric white-label supply.'},
+      {t:'International Pilot',d:'Partner with 1 Singapore boutique and 1 Japanese concept store focused on Asian craft + sustainability. Small consignment to test demand.'},
+      {t:'Award Applications',d:'Vietnam Social Enterprise Awards, Startup Vietnam, Thuận Thiên Programme. Awards = free PR + institutional credibility.'},
+      {t:'Carbon Credit Programme',d:'Document and quantify CO₂ reduction from diverting organic waste. Apply for verified carbon credits to create additional revenue stream.'},
+    ],
+    kpis:[{n:'2',l:'B2B partners'},{n:'2',l:'Export markets'},{n:'1',l:'Award win target'}]
+  }
+];
+
+function showPhase(idx,tab){
+  document.querySelectorAll('.imc-tab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  const p=phases[idx];
+  document.getElementById('imcContent').innerHTML=`
+    <div class="ic-phase-head">
+      <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">${p.tag}</div>
+      <h3>${p.title}</h3>
+      <p>${p.goal}</p>
+    </div>
+    <div class="ic-channels">${p.channels.map(c=>`<span class="ic-ch">${c}</span>`).join('')}</div>
+    <div class="ic-actions-grid">${p.actions.map(a=>`<div class="ic-action"><div class="ic-action-title">${a.t}</div><div class="ic-action-desc">${a.d}</div></div>`).join('')}</div>
+    <div class="ic-kpis">${p.kpis.map(k=>`<div class="ic-kpi"><div class="ic-kpi-num">${k.n}</div><div class="ic-kpi-label">${k.l}</div></div>`).join('')}</div>
+  `;
+}
+// Init phase 0
+document.addEventListener('DOMContentLoaded',()=>{
+  showPhase(0,document.querySelector('.imc-tab'));
+});
+
+/* ── Email signup ── */
+function handleSignup(){
+  const input=document.querySelector('.email-input');
+  if(!input.value||!input.value.includes('@')){
+    input.style.borderColor='#C0392B';
+    setTimeout(()=>input.style.borderColor='',1500);
+    return;
+  }
+  input.value='';
+  const btn=document.querySelector('.email-form .btn-gold');
+  const orig=btn.textContent;
+  btn.textContent='✓ You\'re on the list!';
+  btn.style.background='var(--green-l)';
+  setTimeout(()=>{btn.textContent=orig;btn.style.background='';},3000);
+}
+
+/* ── Mobile menu ── */
+function toggleMenu(){
+  const links=document.querySelector('.nav-links');
+  const open=links.style.display==='flex';
+  links.style.cssText=open?'':`display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:rgba(18,14,7,0.97);backdrop-filter:blur(12px);padding:24px 24px 32px;gap:16px;z-index:99;`;
+}
+</script>
+</body>
+</html>
